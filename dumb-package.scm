@@ -1,6 +1,7 @@
 (use-modules (guix packages)
              (guix build-system gnu)
              (guix licenses)
+             (guix gexp)
              (gnu packages base))
 
 (define-public dumb-package
