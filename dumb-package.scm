@@ -11,7 +11,8 @@
     (source (local-file "hello.c"))
     (build-system gnu-build-system)
     (arguments
-     '(#:phases
+     '(#:tests? #f  ; No tests
+       #:phases
        (modify-phases %standard-phases
          (delete 'configure)
          (replace 'build
