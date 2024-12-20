@@ -15,10 +15,10 @@ guix build -f dumb-package.scm
 After building, you can run the program using:
 
 ```bash
-/gnu/store/*/dumb-package-0.1/bin/dumb-package
+$(guix build -f dumb-package.scm)/bin/dumb-package
 ```
 
-The exact store path will vary but will be shown after the build completes.
+This command will automatically use the correct store path.
 
 ## Files
 
